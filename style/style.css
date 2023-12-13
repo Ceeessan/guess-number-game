@@ -1,0 +1,193 @@
+*{
+   
+    margin:auto;
+    padding:auto;
+    box-sizing: border-box;
+}
+
+body{
+    background: #1e1e1e;
+    font-family: Chakra Petch ;
+}
+
+:root{
+--myTextColorWhite: rgb(212, 212, 212);
+}
+
+.heading-text{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    border-bottom: 5px solid var(--myTextColorWhite);
+}
+
+.heading-text h3{
+    margin-bottom: 2%;
+    color: rgb(17, 132, 17);
+}
+
+.heading-text h1{
+    margin-bottom: 2%;
+    color: rgb(21, 181, 21);
+}
+
+.heading-text span{
+    font-size: 16px;
+    color: rgb(222, 71, 159);
+}
+
+.heading-text p{
+    margin-bottom: 2%;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(96, 185, 96);
+}
+
+.guess-number{
+    display:flex;
+    background-color: rgb(27, 27, 27);
+    border: 2px solid var(--myTextColorWhite);
+
+}
+
+.guess-number-container{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    text-align: center;
+    padding: 5%;
+    margin-right:0px;
+}
+
+.guess-number-container label{
+    color: var(--myTextColorWhite);
+}
+
+.guess-number-container input{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 4vh;
+    width:60px;
+    height: 50px;
+    border: none;
+    border-radius: 2%;
+    background-color: var(--myTextColorWhite) ;
+}
+
+.guess-number-container button{
+    font-family:   Chakra Petch ;
+    font-weight: bold;
+    border-radius: 5%;
+    margin-top: 3%;
+    border:none;
+    width: 100px;
+    height: 25px;
+    font-size: 16px;
+    border:none;
+    background-color: var(--myTextColorWhite);
+    cursor:pointer;
+    transition: background-color 0.3s ease;
+    color: black;
+}
+
+.guess-number-container button.primary{
+    background-color: #88b2ce;
+    color: #131313;
+}
+
+
+.guess-number-container button:hover {
+    background-color: #7bb3d9;
+  }
+
+  .guess-number-container button:active {
+    background-color: #2876ab;
+  }
+
+.number{
+    margin-top: 10%;
+    font-weight: bold;
+    color: var(--myTextColorWhite);
+    background-color: rgb(114, 114, 114);
+    padding: 10px;
+    border-radius: 10%;
+}
+
+.guess-number-container p{
+    margin-top:3%;
+    color:var(--myTextColorWhite);
+}
+
+.score-board-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10%;
+    color: var(--myTextColorWhite);
+    margin-left: 0px;
+}
+
+.score-board{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10%;
+    color: var(--myTextColorWhite);
+}
+
+
+
+.score-board button{
+    display: inline-block;
+    font-family:   Chakra Petch  ;
+    margin-bottom: 10%;
+    margin-top: 2%;
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 3%;
+    padding-left:3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    cursor:pointer;
+    transition: background-color 0.3s ease;
+    border:none;
+    border-radius: 5%;
+}
+
+  .score-board button.primary {
+    background-color: #88b2ce;
+    color: #fff;
+  }
+
+  .score-board button:hover {
+    background-color: #7bb3d9;
+  }
+
+  .score-board button:active {
+    background-color: #2876ab;
+  }
+
+@media (max-width: 740px) {
+
+    body{
+        margin: 10px;
+    }
+
+    .guess-number{
+        border: 2px solid grey;
+    }
+
+    .score-board-container{
+        margin-top: 15%;
+    }
+
+    .score-board-container p{
+        display:flex;
+        text-align: center;
+        color:var(--myTextColorWhite);
+    }
+}

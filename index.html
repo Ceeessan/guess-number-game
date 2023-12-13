@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Edu+NSW+ACT+Foundation:wght@500&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style/style.css">
+    <script type="module" src="script/script.js"></script>
+    <title>Guess number game!</title>
+</head>
+<body>
+
+
+    <header class="heading-text">
+        <h3> A simple game of..</h3>
+        <h1> Guess my number!</h1>
+
+        <p> <span>Rules:</span>
+            If you guess right, your score will increase. 
+            If you don't win in 5 tries, you will loose a point.</p>
+    </header>
+
+    <main>
+<div class="guess-number">
+    <div class="guess-number-container">
+        <label> Choose a number between 1 and 20.</label>
+        <input type="number" class="guess">
+        <button class="check">Check!</button>
+        <div class="number">?</div>
+        <p class="message">Start guessing..</p>
+    </div>
+
+
+    <div class="score-board-container">    
+    <p class="score-number"> Tries: <span class="tries"> 5 </span></p>
+    <p class="highscore-number">Highscore: <label class="highscore"> 0 </label></p>
+    </div>
+</div>
+
+
+<div class="score-board">
+    <button class="again"> Play again!</button>
+</div> 
+    </main>
+    
+</body>
+</html>
